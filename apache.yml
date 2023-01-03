@@ -2,7 +2,7 @@
 - hosts: webservers 
   become: True
   tasks:
-    - name: Install packages
+    - name: Install latest version of Apache
       apt-get:
         name: "httpd"
         state: "present"
